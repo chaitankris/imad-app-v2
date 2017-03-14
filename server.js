@@ -31,7 +31,7 @@ function CreateTemplate(data){
 	var tittle = data.tittle;
 	var heading = data.heading;
 	var content = data.content;
-	var date = date.date;
+	var date = data.date;
 
 	var htmlTemplate = `
 	<html>
