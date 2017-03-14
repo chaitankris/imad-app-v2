@@ -2,7 +2,7 @@ console.log('Loaded!');
 
 var img = document.getElementById('madi');
 img.onclick = function(){
-   var interval = setinterval(moveright,50);  
+   var interval = setInterval(moveright,50);  
 };
 
 function moveright(){
