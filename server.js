@@ -17,7 +17,7 @@ var articles ={
 
 	},
 	'artile-Two':{
-		title:'Article two | Chaitan Kris',
+	    title:'Article two | Chaitan Kris',
 		heading:'Article two',
 		date:'Mar 11 ,2017',
 		content :`<p>
