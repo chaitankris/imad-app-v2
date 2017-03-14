@@ -45,13 +45,13 @@ function createTemplate(data){
 	<body>
 
 	<div class="container">
-	<div> <a href="/">Home</a> </div>
+	       <div> <a href="/">Home</a> </div>
 
-	<div> ${heading} </div>
+	        <div> ${heading} </div>
 
-	<div> ${date} </div>
+	        <div> ${date} </div>
 
-   </div> ${content} </div>
+            <div> ${content} </div>
 
     </div>	
 
