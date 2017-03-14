@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var articles ={
-	'article-one':{
+	'article-One':{
 		title:'Article one | Chaitan Kris',
 		heading:'Article one',
 		date:'Mar 10 ,2017',
@@ -16,7 +16,7 @@ var articles ={
 		</p>`
 
 	},
-	'artile-two':{
+	'artile-Two':{
 		title:'Article two | Chaitan Kris',
 		heading:'Article two',
 		date:'Mar 11 ,2017',
@@ -27,7 +27,7 @@ var articles ={
 	}
 };
 
-function CreateTemplate(data){
+function createTemplate(data){
 	var title = data.title;
 	var heading = data.heading;
 	var content = data.content;
@@ -78,7 +78,7 @@ app.get('/ui/madi.png', function (req, res) {
 app.get('/:articleName',function(req,res){
 
 	var articleName = req.params.articleName;
-	res.sendFile(CreateTemplate(articles[articleName]));
+	res.send(createTemplate(articles[articleName]));
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
