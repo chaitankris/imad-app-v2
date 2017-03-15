@@ -5,6 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var counter = 0;
 
 var articles ={
 	'article-One':{
@@ -63,6 +64,10 @@ function createTemplate(data){
 	return htmlTemplate;
 }
 
+function counter{
+   counter = conunter + 1;
+   
+};
 
 app.get('/', function (req, res) {
 	res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -84,6 +89,10 @@ app.get('/:articleName',function(req,res){
 
 	var articleName = req.params.articleName;
 	res.send(createTemplate(articles[articleName]));
+});
+
+app.get('/counter',function(req,res){
+   res.send() 
 });
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
