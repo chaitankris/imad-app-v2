@@ -21,7 +21,9 @@ var request = new XMLHttpRequest();
 
 //Capture the response
 request.onreadystatechange = function(){
+    console.log('ready');
     if(request.readyState === XMLHttpRequest.Done){
+        console.log('done');
         if(request.status === 200){
          var counter =  request.responseText;
          var span = document.getElementById('count');
