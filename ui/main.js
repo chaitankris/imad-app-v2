@@ -12,7 +12,7 @@ function moveright(){
 
 var marginleft = 0;
 
-var button = get.ElementById('counter');
+var button = document.getElementById('counter');
 
 button.onclick = funtion(){
 
