@@ -30,5 +30,9 @@ request.onreadystatechange = function(){
     }
 };
 
+//make request  to the web server
+
+request.open('GET','http://chaitankris.imad.hasura-app.io/counter',true)
+request.send(null);
     
 }
