@@ -12,3 +12,12 @@ function moveright(){
 
 var marginleft = 0;
 
+var counter = get.ElementById('counter');
+
+counter.onclick = funtion(){
+  
+  count = count +1 ;
+  var span = document.getElementById('count');
+  span.innerHTML = count.toString();
+    
+}
