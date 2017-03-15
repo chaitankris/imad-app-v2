@@ -12,12 +12,23 @@ function moveright(){
 
 var marginleft = 0;
 
-var counter = get.ElementById('counter');
+var button = get.ElementById('counter');
 
-counter.onclick = funtion(){
-  
-  count = count +1 ;
-  var span = document.getElementById('count');
-  span.innerHTML = count.toString();
+button.onclick = funtion(){
+
+// make a request
+var request = new XMLHttpRequest();
+
+//Capture the response
+request.onreadystatechange = function(){
+    if(request.readyState === XMLHttpRequest.Done){
+        if(request.status === 200){
+         var counter =  request.responseText;
+         var span = document.getElementById('span');
+         span.innerHTML = counter.toString();
+        }
+    }
+};
+
     
 }
