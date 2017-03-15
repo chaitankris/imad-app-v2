@@ -14,7 +14,7 @@ var marginleft = 0;
 
 var button = document.getElementById('counter');
 
-button.onclick = funtion(){
+button.onclick = function(){
 
 // make a request
 var request = new XMLHttpRequest();
